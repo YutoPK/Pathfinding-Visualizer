@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;800&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+	<script src="https://kit.fontawesome.com/5537556fb3.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Pathfinding</title>
+</head>
+<body id="bd">
+	
+	<header id="header-div">
+		<h1 id="header-name"class="white-text">Pathfinder Visualizer</h1>
+		<div class="dropdown-div">
+			<button onclick="startDropdown()" class="dropdown-start-button">
+				Choose Algorithm   
+				<i class="fa-solid fa-caret-down"></i>
+			</button>
+			<div id="myDropdown" class="dropdown-content-div">
+			  	<a id="algorithm-1" href="#">Dijkstra</a>
+			  	<a id="algorithm-2" href="#">BFS</a>
+			</div>
+		</div> 
+		<button id="visualize-table-button" type="button">Visualize</button> 
+		<button id="refresh-table-button" type="button">Refresh Table</button> 
+		<button id="devisualize-table-button" type="button">Remove Visualisation</button> 
+	</header>
+	<div id="objects-to-place-div">
+		<div class="object-to-place-div">
+			<div id="start-point-div" class="div-around-object">
+				<img id="startPoint" src="img\startPoint4.png" draggable="true" ondragstart="drag(event)">
+			</div>
+			<p class="white-text object-text">Starting Point</p>
+		</div>
+		<div class="object-to-place-div">
+			<div id = "end-point-div" class="div-around-object">
+				<img id="endPoint" src="img\endPoint2.png" draggable="true" ondragstart="drag(event)">
+			</div>
+			<p class="white-text object-text">Ending Point</p>
+		</div>
+		<div id="block-div" class="object-to-place-div">
+			<div class="div-around-object">
+				<img id="blockPoint" src="img\block2.png">
+			</div>
+			<p class="white-text object-text">Block</p>
+		</div>
+		<div id="eraser-div" class="object-to-place-div">
+			<div class="div-around-object">
+				<img id="eraser" src="img\eraser.png">
+			</div>
+			<p class="white-text object-text">Eraser</p>
+		</div>
+	</div>
+
+	<table id="table-id"></table>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="priority-queue.js"></script>
+    <script src="index.js"></script>
+</body> 
+</html>

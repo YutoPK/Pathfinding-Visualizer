@@ -1,0 +1,246 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #191A1C;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.dropdown-start-button {
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	margin-top: 10px;
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.dropdown-start-button:hover, .dropdown-start-button:focus {
+	background-color: #2980B9;
+}
+
+.dropdown-div {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content-div {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 183px;
+	z-index: 1;
+	margin-top: 4px;
+}
+
+.dropdown-content-div a {
+	color: black;
+	font-weight: 600;
+	font-size: 20;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content-div a:hover {
+	background-color: #E4E4E4
+}
+
+.show {
+	display:block;
+}
+
+#header-name{
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-top: 17px;
+}
+
+#refresh-table-button{
+	font-weight: 700;
+	height: 50px;
+	margin-top: 13px;
+	margin-left: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #191A1C;
+	color: white;
+}
+
+#visualize-table-button{
+	font-weight: 700;
+	height: 50px;
+	margin-top: 13px;
+	margin-left: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #191A1C;
+	color: white;
+}
+
+#devisualize-table-button{
+	font-weight: 700;
+	height: 50px;
+	margin-top: 13px;
+	margin-left: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #191A1C;
+	color: white;
+}
+
+#header-div{
+	width: 100%;
+	background-color: #0157AE;
+	height: 70px;
+	display: flex;
+}
+
+.table-cell{
+	border: 2px solid #858374;
+	height: 42px;
+	width: 42px;
+}
+
+.table-cell-div{
+	height: 100%;
+	width: 100%;
+}
+
+#table-id{
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+
+#start-point-img{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1px;
+}
+
+#objects-to-place-div{
+	display: flex;
+	flex-direction: row;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.object-to-place-div{
+	background-color: #0157AE;
+	border-radius: 10px 10px 10px 10px;
+	display: flex;
+	height: 58px;
+	border: 3px solid #0157AE;
+	margin-right: 30px;
+}
+.div-around-object{
+	height: 46px;
+	width: 46px;
+	border: 3px solid #7A848E;
+	background-color: #002590;
+	margin-left: 6px;
+	margin-top: 3px;
+}
+
+.object-text{
+	font-weight: 700;
+	font-size: 21px;
+	padding-top: 13px;
+	margin-left: 13px;
+	margin-right: 15px;
+	 -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.white-text{
+	color: white;
+}
+
+.selector {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	user-drag: none; 
+}
+
+@media screen and (max-width: 768px) {
+	#objects-to-place-div{
+		flex-direction: column;
+	}
+	.object-to-place-div{
+		margin-bottom: 10px;
+		width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#header-div{
+		flex-direction: column;
+		height: 365px;
+	}
+
+	#header-name{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+	}
+
+	.dropdown-div{
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+	}
+
+	.dropdown-start-button{
+		width: 200px;
+	}
+
+	.dropdown-content-div {
+		min-width: 200px;
+	}
+
+	#visualize-table-button{
+		margin-left: auto;
+		margin-right: auto;
+		width: 200px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	#devisualize-table-button{
+		margin-left: auto;
+		margin-right: auto;
+		width: 200px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	#refresh-table-button{
+		margin-left: auto;
+		margin-right: auto;
+		width: 200px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
