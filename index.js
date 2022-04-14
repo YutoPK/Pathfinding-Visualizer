@@ -558,13 +558,15 @@ let table = () => {
     var ignoreClickOnMeElement1 = document.getElementById('table-id');
     var ignoreClickOnMeElement2 = document.getElementById('block-div');
     var ignoreClickOnMeElement3 = document.getElementById('eraser-div');
+    var ignoreClickOnMeElement4 = document.getElementsByClassName('block');
     
 
     document.addEventListener('mousedown', function(event) {
         var isClickInsideTable1 = ignoreClickOnMeElement1.contains(event.target);
         var isClickInsideTable2 = ignoreClickOnMeElement2.contains(event.target);
         var isClickInsideTable3 = ignoreClickOnMeElement3.contains(event.target);
-        if (!isClickInsideTable1 && !isClickInsideTable2 && !isClickInsideTable3) {
+        var isClickInsideTable4 = ignoreClickOnMeElement4.contains(event.target);
+        if (!isClickInsideTable1 && !isClickInsideTable2 && !isClickInsideTable3 && !isClickInsideTable4) {
             deactivateBlock();
             deactivateEraser();
         }
