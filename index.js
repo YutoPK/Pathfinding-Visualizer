@@ -392,6 +392,11 @@ let table = () => {
                                     visualiseDijsktraAdded();
                                 else if(isRoadActive)
                                     visualiseDijkstra();
+                            }else{
+                                if(ev.target.firstChild.id == "endPoint")
+                                    visualiseDijsktraAdded();
+                                else if(isRoadActive)
+                                    visualiseBFS();
                             }
                         }
                     }
